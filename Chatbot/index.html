@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chatbot Vacaciones</title>
+
+<!-- Conectamos el archivo donde están los estilos visuales -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="wrap">
+    <!-- Panel donde se muestran los datos del empleado encontrado -->
+
+    <div class="panel">
+
+        <h3>Datos del Empleado</h3>
+
+        <div id="emp">
+            Sin identificar
+        </div>
+
+        <hr>
+        <!-- Muestra el número generado cuando finaliza la solicitud -->
+
+        <div>
+            <b>Operación:</b><br>
+            <span id="op">-</span>
+        </div>
+
+    </div>
+
+    <!-- Área principal donde funciona el chatbot -->
+
+    <div id="chatbox">
+        <!-- Título del chatbot -->
+
+        <div id="head">
+            Solicitud de Vacaciones
+        </div>
+
+        <!-- Acá se cargan los mensajes entre usuario y bot -->
+
+        <div id="chat"></div>
+
+        <!-- Zona donde el usuario escribe y envía mensajes -->
+
+        <div id="inputArea">
+
+            <input 
+                id="txt" 
+                placeholder="Escriba aquí..."
+            >
+            <!-- Al presionar este botón se ejecuta la función send() del JavaScript -->
+
+            <button onclick="send()">
+                Enviar
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Panel que muestra en qué parte del proceso está el chatbot -->
+
+    <div class="panel">
+
+        <h3>Monitor de Estados</h3>
+        <!-- Este espacio se actualiza según el estado del proceso -->
+
+        <div id="states"></div>
+
+    </div>
+
+
+</div>
+
+
+<!-- Conectamos el archivo donde está toda la lógica del chatbot -->
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
